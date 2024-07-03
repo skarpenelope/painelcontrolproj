@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.header{}
+
+#sidebar {}
+
+.main-container {}
