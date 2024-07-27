@@ -62,7 +62,7 @@ body{
 }
 
 a{
-    color: var(--color-dark);
+    color: var(--color-background);
 }
 
 img{
