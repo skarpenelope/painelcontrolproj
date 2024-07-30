@@ -231,4 +231,48 @@ aside .sidebar .message-count{
     border-radius: var(--border-radius-1);
 }
 
+main{
+    margin-top: 1.4rem;
+}
+
+main .destaque{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+main .destaque > div{
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main .destaque > div:hover{
+    box-shadow: none;
+
+}
+
+main .destaque > div .status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .destaque h3{
+    margin-left: 50%;
+}
+
+main .list{
+    display: inline-block;
+    gap: 1rem;
+}
+fieldset{
+    background-color: #202528;
+    max-width: 500px;
+    padding: 16px;
+}
 

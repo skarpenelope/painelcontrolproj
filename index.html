@@ -35,23 +35,23 @@
 
             <div class="sidebar">
                
-                <a href="#">
+                <a href="/index.html">
                     <span class="material-symbols-outlined">
                         dashboard
                     </span>
                     <h3>dashboard</h3>
                 </a>
-                <a href="#"> <span class="material-symbols-outlined">
+                <a href="/entradas.html"> <span class="material-symbols-outlined">
                     paid
                     </span>
                     <h3>entradas</h3>
                 </a>
-                <a href="#"> <span class="material-symbols-outlined">
+                <a href="/saidas.html"> <span class="material-symbols-outlined">
                     payments
                     </span>
                     <h3>saidas</h3>
                 </a>
-                <a href="#"> <span class="material-symbols-outlined">
+                <a href="/planner.html"> <span class="material-symbols-outlined">
                     checklist
                     </span>
                     <h3>planner</h3>
@@ -63,14 +63,41 @@
 
         <!--main-->
         <main>
+            <h1>Entradas</h1>
             <div class="destaque">
-                <h1> entradas </h1>
+                <div class="sales">
+                    <div class="status">
+                        <div class="graphEnt">
+                            <h3> Entradas </h3>
+                            <h1> 20,500 </h1>
+                            <svg>
+                                <circle cx="42" cy="50" r="40"></circle>
+                            </svg>
+                            <div class="porcentagem">
+                                <p>+81k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="list">
+                <fieldset>
+                    <form action="#">
+                        <input type="number" name="valor" id="value">
+                        <select name="fontes" id="meiodeent">
+                            <option value="trabalho">trabalho</option>
+                            <option value="vendas">vendas</option>
+
+                        </select>
+                        <input type="date" name="data" id="date">
+
+                    </form>
+                </fieldset>
             </div>
         </main>
 
     </div>
-
-
-    
 </body>
 </html>
