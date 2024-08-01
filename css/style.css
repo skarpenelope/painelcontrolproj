@@ -267,12 +267,23 @@ main .destaque h3{
 }
 
 main .list{
-    display: inline-block;
-    gap: 1rem;
+    display: flex;
+    gap: 0;
+    margin-top: 1rem;
+    align-items: center;
 }
 fieldset{
-    background-color: #202528;
-    max-width: 500px;
-    padding: 16px;
+    max-width: 600px;
+    height: 1rem;
+    padding: 0.1rem;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.list input, .list select{
+    height: 1rem;
+    border-radius: 5px;
+    border-color: #181a1e;
 }
 
