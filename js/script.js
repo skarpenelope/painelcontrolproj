@@ -10,33 +10,34 @@ const form = document.getElementById("list");
 const btn = document.getElementById("button+");
 let formCount = 0;
 
-/*function addlinha();
+function addLinha(){
+    const newForm = document.createElement('form');
+    newForm.innerHTML = `
+    <fieldset>
+                <form action="#">
+                    <input type="number" name="valor" id="value">
+                    <select name="fontes" id="meiodeent">
+                        <option value="trabalho">trabalho</option>
+                        <option value="vendas">vendas</option>
+
+                    </select>
+                    <input type="date" name="data" id="date">
+                    <button id="button+" onclick="addLinha()">+</button>
+
+                </form>
+    </fieldset>`;
+            form.appendChild(newForm);
+
+    console.log("vc clicou no botão");
+};
 
 document.addEventListener('DOMContentLoaded', function(){
-    addlinha.addEventListener('click', function(){
-        const newForm = document.createElement('form');
-        newForm.innerHTML = `
-        <fieldset>
-                    <form action="#">
-                        <input type="number" name="valor" id="value">
-                        <select name="fontes" id="meiodeent">
-                            <option value="trabalho">trabalho</option>
-                            <option value="vendas">vendas</option>
-
-                        </select>
-                        <input type="date" name="data" id="date">
-                        <button id="button+" onclick="addLinha()">+</button>
-
-                    </form>
-        </fieldset>`;
-                form.appendChild(newForm);
-
-        console.log("vc clicou no botão");
-    })
-})*/
+    addLinha();
+    
+})
 
 
-function addlinha(){
+/*function addlinha(){
     var linha = document.getElementById("list");
     var copy = document.cloneNode(linha);
     n++;
@@ -47,4 +48,4 @@ function addlinha(){
 
     element.parentNode.appendChild(copy);
 
-}
+}*/
