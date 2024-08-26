@@ -7,14 +7,13 @@ document.getElementById("valorEnt").innerHTML = `<i>${valorEntAtual}</i>`
 //dicionar nova linha na lista de entrada
 n = 0;
 const form = document.getElementById("list");
-const btn = document.getElementById("button+");
 let formCount = 0;
 
 function addLinha(){
-    const newForm = document.createElement('form');
+    const newForm = document.createElement('div');
     newForm.innerHTML = `
     <fieldset>
-                <form action="#">
+
                     <input type="number" name="valor" id="value">
                     <select name="fontes" id="meiodeent">
                         <option value="trabalho">trabalho</option>
@@ -22,18 +21,32 @@ function addLinha(){
 
                     </select>
                     <input type="date" name="data" id="date">
-                    <button id="button+" onclick="addLinha()">+</button>
+                    <button id="button+" class="button-plus" onclick="addLinha()">+</button>
 
     </fieldset>`;
-            form.appendChild(newForm);
+           
+    form.appendChild(newForm);
 
-    console.log("vc clicou no botão");
 };
 
-document.addEventListener('DOMContentLoaded', function(){
+newForm.querySelector("button-plus").addEventListener('click', function(event) {
+    event.preventeDefault();
     addLinha();
     
 })
+console.log("vc clicou no botão");
+
+document.querySelector("button-plus").addEventListener('click', function(event) {
+    event.preventDefault();
+    addLinha();
+})
+
+
+
+/*document.getElementById("button+").addEventListener('click', function(){
+    addLinha();
+    
+})*/
 
 
 /*function addlinha(){
