@@ -24,7 +24,6 @@ function addLinha(){
                     <input type="date" name="data" id="date">
                     <button id="button+" onclick="addLinha()">+</button>
 
-                </form>
     </fieldset>`;
             form.appendChild(newForm);
 
