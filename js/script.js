@@ -29,12 +29,7 @@ function addLinha(){
 
 };
 
-newForm.querySelector("button-plus").addEventListener('click', function(event) {
-    event.preventeDefault();
-    addLinha();
     
-})
-console.log("vc clicou no botão");
 
 document.querySelector("button-plus").addEventListener('click', function(event) {
     event.preventDefault();
@@ -43,21 +38,3 @@ document.querySelector("button-plus").addEventListener('click', function(event) 
 
 
 
-/*document.getElementById("button+").addEventListener('click', function(){
-    addLinha();
-    
-})*/
-
-
-/*function addlinha(){
-    var linha = document.getElementById("list");
-    var copy = document.cloneNode(linha);
-    n++;
-
-    copy.getElementByTagName('valor');
-    copy.getElementByTagName('fontes');
-    copy.getElementByTagName('data');
-
-    element.parentNode.appendChild(copy);
-
-}*/
