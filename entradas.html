@@ -19,7 +19,7 @@
 <body>
 
     <header>
-        <h1>a</h1>
+        <h1>dashboard de controle finaceiro</h1>
     </header>
 
 
@@ -35,7 +35,7 @@
 
             <div class="sidebar">
                
-                <a href="/index.html">
+                <a href="/dashboard.html">
                     <span class="material-symbols-outlined">
                         dashboard
                     </span>
@@ -60,6 +60,41 @@
             </div>
 
         </aside>
+
+        <div class="main-container">
+            <div class="side-by-side">
+                <main>
+                    <h1>Entradas</h1>
+                    <div class="destaque">
+                        <div class="sales">
+                            <div class="status">
+                                <div class="graphEnt">
+                                    <h3> Entradas </h3>
+                                    <h1 id="valorEnt" contenteditable="true"> 0 </h1>
+                                    <svg>
+                                        <circle cx="42" cy="50" r="40"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="list" class="list">
+                        <fieldset>
+                            <div>
+                                <input type="number" name="valor" id="value">
+                                <input type="date" name="data" id="date">
+                                <button id="button+" onclick="addLinha()">+</button>
+        
+                            </div>
+                        </fieldset>
+                    </div>
+                </main>
+            </div>
+    
+        </div>
     </div>
+
+    <script src="/js/entradas.js"></script>
 </body>
 </html>
